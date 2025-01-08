@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class TestComponent {
   constructor() {
+  }
 
+  test() {
+    alert(localStorage.getItem('dataTest'))
   }
 }

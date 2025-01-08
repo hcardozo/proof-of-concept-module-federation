@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { TestComponent } from './test.component';
 import { TestRoutingModule } from './test-routing.module';
 import { createCustomElement } from '@angular/elements';
+import { ComponentTwoComponent } from './component-two/component-two.component';
 
 @NgModule({
-  declarations: [TestComponent],
+  declarations: [TestComponent, ComponentTwoComponent],
   imports: [CommonModule, TestRoutingModule, FormsModule],
-  exports: [TestComponent]
+  exports: [TestComponent, ComponentTwoComponent]
 })
 export class TestModule {
   constructor(private injector: Injector) {
